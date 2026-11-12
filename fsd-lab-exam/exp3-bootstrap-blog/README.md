@@ -1,0 +1,79 @@
+# 3. Responsive Blog (Bootstrap 5)
+
+> Core idea: **container → row → col-md-4 → card**
+
+## ▶ Start
+
+1. Create a folder **Exp3** and open it in VS Code.
+2. New File → **blog.html** (⚠️ needs internet for Bootstrap)
+
+## 📄 Code: blog.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#">My Blog</a>
+    </nav>
+
+    <!-- Blog Posts -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Post 1</h5>
+                        <p class="card-text">This is my first blog.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Post 2</h5>
+                        <p class="card-text">This is my second blog.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Post 3</h5>
+                        <p class="card-text">This is my third blog.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        © 2026 My Blog
+    </footer>
+
+</body>
+</html>
+```
+
+## 🏁 End
+
+1. **Ctrl + S** → open in Chrome.
+2. Show it's **responsive**: make the browser window narrow → the 3 cards stack vertically.
+
+> 💡 The 3 post cards are the same block copied 3 times. Learn one and copy it.

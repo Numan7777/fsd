@@ -1,0 +1,92 @@
+# 1. Portfolio (HTML5 + CSS Grid + Flexbox)
+
+> Core idea: Navbar uses **flex**, projects use **grid**
+
+## ▶ Start
+
+1. Create a folder **Exp1** and open it in VS Code.
+2. New File → **index.html**
+
+## 📄 Code: index.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* FLEXBOX - navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+        }
+
+        /* GRID - projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: lightgray;
+            padding: 20px;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h3>Numan</h3>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about">
+        <h1>Hi, I am Numan</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section id="projects" class="projects">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+    </section>
+
+    <footer id="contact">
+        <p>Email: numan@gmail.com</p>
+    </footer>
+
+</body>
+</html>
+```
+
+## 🏁 End
+
+1. **Ctrl + S** to save.
+2. Right-click **index.html** → **Reveal in File Explorer** → double-click to open in Chrome.
+3. Show the examiner: the navbar uses **flex**, the 3 project cards use **grid**.
